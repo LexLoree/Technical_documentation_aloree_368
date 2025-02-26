@@ -38,148 +38,149 @@ h2 {
 }
 
 #navbar {
-  display: block;
-  position: fixed;
-  min-width: 290px;
-  width: 429px;
-  height: 100%;
-
-  background: #0076a33b;
-
-  font-family: Michroma, helvetica, san-serif;
-  font-weight: 400;
+    display: block;
+    position: fixed;
+    min-width: 290px;
+    width: 429px;
+    height: 100%;
   
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
-#navdiv {
-  border: 1px solid black;
-  width: 333px;
-  margin: 10px 72px 10px 35px;
-}
-
-header {
-  margin-top: 40px;
-  margin-bottom: 20px;
-
-  font-size: 40px;
-  line-height: 56.88px;
-}
-
-#nav-title {
-  margin-top: 14px;
-  margin-left: 36px;
-  font-size: 36px;
-}
-
-#nav-description {
-  margin-top: 14px;
-  margin-left: 36px;
-}
-
-.nav-link {
-  display: block;
-  width: 429px;
-
-  margin-top: 20px;
-  padding: 10px;
-
-  font-size: 16px;
-  line-height: 28.44px;
-  color: #ffffff;
+    background: #C4DFEA;
   
-  background: #0076a3;
-}
-
-#main-doc {
-  position: absolute;
-  margin-left: 475px;
-  max-width: 670px;
-
-  font-family: Michroma, helvetica, san-serif;
-  font-weight: 400;
-  line-height: 30px;
-}
-
-.docdiv {
-  border: 1px solid black;
-  width: 677px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-h2 {
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 400;
-}
-
-li {
-  margin: 20px 0px 20px 25px;
-}
-
-pre {
-  background: #d9d9d9;
-  padding: 20px 0px 0px 20px;
-  margin: 20px 0px 20px 0px;
-
-  max-width: 680px;
-}
-
-p:last-of-type {
-  margin-bottom: 20px;
-}
-
-
-@media (max-width: 1080px){
-  
-  
-    #navbar {
-        position: absolute;
-        top: 0;
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        max-height: 275px;
-        border: none;
-        z-index: 1;
-        border-bottom: 2px solid;
-        text-align: center;
-
-    }
-  
-  
-    #nav-title{
-        width: 100% !important;
-        margin: 14px auto 10px auto;
-       
-        font-size: 28px;
-    }
-  
-  
-  #nav-description {
-        margin-top: 14px;
-        margin-left: 36px;
-        margin-bottom: 10px;
-      }
-  
-  
-  .nav-link {
-        width: 100%;
-        margin-top: 0px;
+    font-family: Michroma, helvetica, san-serif;
+    font-weight: 400;
+    
+    overflow-y: auto;
+    overflow-x: hidden;
   }
-  
   
   #navdiv {
-        margin: -10px auto 10px auto;
+    border: 1px solid black;
+    width: 333px;
+    margin: 10px 72px 10px 35px;
+  }
+  
+  header {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  
+    font-size: 40px;
+    line-height: 56.88px;
+  }
+  
+  #nav-title {
+    margin-top: 14px;
+    margin-left: 36px;
+    font-size: 36px;
+  }
+  
+  #nav-description {
+    margin-top: 14px;
+    margin-left: 36px;
+  }
+  
+  .nav-link {
+    display: block;
+    width: 429px;
+  
+    margin-top: 20px;
+    padding: 10px;
+  
+    font-size: 16px;
+    line-height: 28.44px;
+    color: #ffffff;
+    
+    background: #0076a3;
+  }
+  
+  #main-doc {
+    position: absolute;
+    margin-left: 475px;
+    max-width: 670px;
+  
+    font-family: Michroma, helvetica, san-serif;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  
+  .docdiv {
+    border: 1px solid black;
+    width: 677px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+  
+  li {
+    margin: 20px 0px 20px 25px;
+  }
+  
+  pre {
+    background: #d9d9d9;
+    padding: 20px 0px 0px 20px;
+    margin: 20px 0px 20px 0px;
+  
+    max-width: 680px;
+  }
+  
+  p:last-of-type {
+    margin-bottom: 20px;
   }
   
   
-    #main-doc { 
-        position: relative;
-        margin-left: 20px;
-        margin-top: 280px;
-    }
+  @media (max-width: 1080px){
+    
+    
+      #navbar {
+          position: sticky;
+          top: 0;
+          padding: 0;
+          margin: 0;
+          width: 100%;
+          max-height: 275px;
+          border: none;
+          z-index: 1;
+          border-bottom: 2px solid;
+          text-align: center;
   
-}
+      }
+    
+    
+      #nav-title{
+          width: 100% !important;
+          margin: 14px auto 10px auto;
+         
+          font-size: 28px;
+      }
+    
+    
+    #nav-description {
+          margin-top: 14px;
+          margin-left: 36px;
+          margin-bottom: 10px;
+        }
+    
+    
+    .nav-link {
+          width: 100%;
+          margin-top: 0px;
+    }
+    
+    
+    #navdiv {
+          margin: -10px auto 10px auto;
+    }
+    
+    
+      #main-doc { 
+          position: relative;
+          margin-left: 20px;
+          margin-top: 20px;
+      }
+    
+  }
+  
